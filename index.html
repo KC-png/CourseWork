@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Web App</title>
+    <link rel="stylesheet" href="Theme.css">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+                <li><a href="#account">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <!-- Category: Starters -->
+        <h3>Starters</h3>
+        <div class="menu-category">
+            <div class="menu-item">
+                <img src="Images/Fries.jpg" alt="Starter 1">
+                <p>Fries</p>
+                <p>Description of Starter 1</p>
+                <p>Price: £5.00</p>
+                <button>Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <!-- Category: Mains -->
+        <h3>Mains</h3>
+        <div class="menu-category">
+            <div class="menu-item">
+                <img src="Images/Burger.png" alt="MainDish1">
+                <p>Burger</p>
+                <p>Description of Main Dish 1</p>
+                <p>Price: £12.00</p>
+                <button>Add to Cart</button>
+            </div>
+           
+        </div>
+
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <p>Main Dish 1</p>
+                <p>Quantity: 2</p>
+                <p>Price: £24.00</p>
+                <button>Remove</button>
+            </div>
+            
+        </div>
+        <div class="order-summary">
+            <p>Total: £24.00</p>
+            <button>Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <form>
+            <h3>Guest Checkout or Account</h3>
+            <label><input type="radio" name="checkout-option" checked> Checkout as Guest</label>
+            <label><input type="radio" name="checkout-option"> Sign in to your Account</label>
+            <br>
+
+            <h3>Billing Information</h3>
+            <label>Name: <input type="text" required></label><br>
+            <label>Email: <input type="email" required></label><br>
+            <label>Address: <input type="text" required></label><br>
+
+            <h3>Payment</h3>
+            <label>Card Number: <input type="text" required></label><br>
+            <label>Expiry Date: <input type="text" required></label><br>
+            <label>CVV: <input type="text" required></label><br>
+
+            <button type="submit">Confirm Order</button>
+        </form>
+    </section>
+
+    <!-- Order Confirmation and Tracking -->
+    <section id="confirmation">
+        <h2>Order Confirmation</h2>
+        <p>Thank you for your order! Your order number is #12345.</p>
+        <p>Estimated Delivery: 30 minutes</p>
+        <p>Order Status: <span>In Progress</span></p>
+    </section>
+
+    <!-- Account Creation/Login Section -->
+    <section id="account">
+        <h2>Account</h2>
+        <h3>Create an Account</h3>
+        <form id="create-account">
+            <label>Username: <input type="text" required></label><br>
+            <label>Password: <input type="password" required></label><br>
+            <button type="submit">Create Account</button>
+        </form>
+
+        <h3>Login to Your Account</h3>
+        <form id="login-account">
+            <label>Username: <input type="text" name="username" id="username-field" class="login-account-field"></label><br>
+            <label>Password: <input type="password" name="password" id="password-field" class="login-account-field"></label><br>
+            <button type="submit" value="Login" id="login-account-submit">Login</button>
+        </form>
+    </section>
+
+</body>
+</html>

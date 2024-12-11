@@ -1,0 +1,256 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #35524A;       /* Dark Green (for headers and footers) */
+    --secondary-color: #D9B44A;     /* Gold/Yellow (for buttons and accents) */
+    --background-color: #F0EDE5;    /* Light Beige (for background) */
+    --text-color: #403D39;          /* Dark Gray (for text) */
+    --accent-color: #B76E79;        /* Mauve (for highlights or secondary buttons) */
+}
+
+/* Body Styling */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Section Titles */
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+/* Menu Section */
+#menu {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.menu-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-item button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Cart Section */
+#cart {
+    width: 80%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--background-color);
+}
+
+.order-summary {
+    text-align: center;
+}
+
+.order-summary p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.order-summary button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.order-summary button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Checkout Section */
+#checkout {
+    width: 80%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+#checkout form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#checkout form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+#checkout form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+#checkout form button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Order Confirmation Section */
+#confirmation {
+    width: 80%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+}
+
+#confirmation span {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Account Section */
+#account {
+    width: 80%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+#account form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#account form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+#account form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+#account form button:hover {
+    background-color: var(--accent-color);
+}
+
+
+.login-account-field {
+
+}
